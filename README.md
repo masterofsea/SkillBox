@@ -1,2 +1,6 @@
-# SkillBox
-SkillBox homeworks
+# SkillBox Middle Unity Developer homeworks 
+Профессия разработчик игр на Unity с нуля до Middle
+В этом репозитории находятся моя решения домашних заданий из курса
+## Справочник директорий
+###C# Homeworks
+Здесь представлены решения домашних заданий по C#
