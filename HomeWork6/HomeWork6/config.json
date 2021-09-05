@@ -1,0 +1,11 @@
+﻿{
+  "NLoaderConfiguration": {
+    "Path": "N.txt"
+  },
+  "FehuConfiguration": {
+    "PathToOutputFile": "Ret.txt",
+    "FileBufferSizeInBinaryLogValue": 16,
+    "UseArchiver": true,
+    "ArchiveOutputFile": "Ret.zip"
+  }
+}
