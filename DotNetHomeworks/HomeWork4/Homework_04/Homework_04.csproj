@@ -45,9 +45,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayExtensions.cs" />
-    <Compile Include="Bookkeeping\Employee.cs" />
+    <Compile Include="Bookkeeping\EmployersYearReport.cs" />
+    <Compile Include="Bookkeeping\IEmployersYearReport.cs" />
     <Compile Include="Bookkeeping\MonthlyAccounting.cs" />
     <Compile Include="Bookkeeping\Months.cs" />
+    <Compile Include="Bookkeeping\Presenters\ConsoleEmployersReportPresenter.cs" />
+    <Compile Include="Bookkeeping\Presenters\IEmployersReportPresenter.cs" />
     <Compile Include="Math\Matrix.cs" />
     <Compile Include="Math\PascalsTriangle.cs" />
     <Compile Include="Program.cs" />

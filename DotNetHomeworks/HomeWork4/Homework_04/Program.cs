@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Text;
 using Homework_04.Bookkeeping;
+using Homework_04.Bookkeeping.Presenters;
 using Homework_04.Math;
 
 namespace Homework_04
@@ -40,23 +41,31 @@ namespace Homework_04
 
                                 if (Console.ReadKey(true).Key == ConsoleKey.Escape) break;
 
-                                var employee = new Employee();
+                                var employersReport = new EmployersYearReport();
+                                
+                                var randomizer = new Random();
+                                for (var i = 1; i <= 12; ++i)
+                                {
+                                    employersReport.AddOrUpdateAnnualAccounting(new MonthlyAccounting((Months) i,
+                                        randomizer.Next(50000, 120000), randomizer.Next(40000, 120000)));
+                                }
+                                
+                                var employersReportPresenter = new ConsoleEmployersReportPresenter();
 
-                                Console.WriteLine(employee);
-                                var top3WorstProfitMonths =
-                                    employee.AnnualAccounting.Where(i => 
-                                        employee.AnnualAccounting.Select(k => k.Profit).Distinct().OrderByDescending(p => p)
-                                            .Take(3).Contains(i.Profit));
+                                Console.WriteLine(employersReportPresenter.PresentReport(employersReport));
+
+
+                                var top3WorstProfitMonths = employersReport.GetMonthsWithTopWorstProfitWithTies(3);
+                                    
 
                                 var sb = new StringBuilder();
-                                foreach (var month in top3WorstProfitMonths)
-                                    sb.AppendFormat("{0} ", month.Month);
+                                foreach (var month in top3WorstProfitMonths) sb.AppendFormat("{0} ", month);
 
-                                Console.WriteLine($"Худшая прибыль в месяцах: {sb}");
+                                Console.WriteLine($"Худшая прибыль в месяцах:{sb}");
 
                                 Console.WriteLine(
-                                    $"Месяцев с положительной прибылью: " +
-                                    $"{employee.AnnualAccounting.Count(i => i.Profit > 0)}");
+                                    "Месяцев с положительной прибылью: " +
+                                    $"{employersReport.GetNumOfMonthsWithPositiveProfit()}");
                             }
 
                             break;

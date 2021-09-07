@@ -1,5 +1,8 @@
 ﻿namespace Homework_04.Bookkeeping
 {
+    /// <summary>
+    /// Перечисление месяцев
+    /// </summary>
     public enum Months
     {
         Jan = 1,
