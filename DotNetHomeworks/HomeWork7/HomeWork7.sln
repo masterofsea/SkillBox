@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diary", "Diary\Diary.csproj", "{C3199DCE-935B-4451-8CA8-AE9DBF00CF93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiaryBookTester", "DiaryBookTester\DiaryBookTester.csproj", "{36FBC8B4-042D-4853-8202-9272D1FF918B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3199DCE-935B-4451-8CA8-AE9DBF00CF93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3199DCE-935B-4451-8CA8-AE9DBF00CF93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3199DCE-935B-4451-8CA8-AE9DBF00CF93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3199DCE-935B-4451-8CA8-AE9DBF00CF93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36FBC8B4-042D-4853-8202-9272D1FF918B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36FBC8B4-042D-4853-8202-9272D1FF918B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36FBC8B4-042D-4853-8202-9272D1FF918B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36FBC8B4-042D-4853-8202-9272D1FF918B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
